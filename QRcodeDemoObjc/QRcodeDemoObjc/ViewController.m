@@ -22,20 +22,20 @@
     
     // alloc and prepare for scan
     self.scanner = [[QRCode alloc] init];
-    [self.scanner prepareScan:self.view completion:^(NSString * __nonnull stringValue) {
-        NSLog(@"%@", stringValue);
-    }];
+//    [self.scanner prepareScan:self.view completion:^(NSString * __nonnull stringValue) {
+//        NSLog(@"%@", stringValue);
+//    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
     // start scan
-    [self.scanner startScan];
+//    [self.scanner startScan];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    self.iconView.image = [QRCode generateImage:@"我就是刀哥" avatarImage:[UIImage imageNamed:@"avatar.jpg"] avatarScale:0.25];
+//    self.iconView.image = [QRCode generateImage:@"我就是刀哥" avatarImage:[UIImage imageNamed:@"avatar.jpg"] avatarScale:0.25];
 }
 
 @end
